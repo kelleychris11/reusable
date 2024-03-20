@@ -12,8 +12,10 @@ jobs:
     runs-on: Chris
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           repository: 'kelleychris11/reusable'
+          path: actions
       - name: flava-town
         run: echo "now THAT'S flavor town!!"
       - name: Current Directory
