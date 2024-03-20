@@ -13,3 +13,5 @@ jobs:
     steps:
       - name: flava-town
         run: echo "now THAT'S flavor town!!"
+      - name: Current Directory
+        run: pwd
