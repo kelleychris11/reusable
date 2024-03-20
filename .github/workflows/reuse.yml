@@ -1,0 +1,14 @@
+name: reuse
+on:
+  workflow_call:
+    inputs:
+      flavor-town:
+        required: false
+        description: "flavor town"
+
+jobs:
+  flavor-town:
+    runs-on: Chris
+    steps:
+      - name: flava-town
+        run: echo "now THAT'S flavor town!!"
