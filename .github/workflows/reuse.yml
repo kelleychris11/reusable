@@ -5,6 +5,7 @@ on:
       flavor-town:
         required: false
         description: "flavor town"
+        type: string
 
 jobs:
   flavor-town:
