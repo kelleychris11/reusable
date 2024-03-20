@@ -11,9 +11,10 @@ jobs:
   flavor-town:
     runs-on: Chris
     steps:
+      - uses: actions/checkout@v3
       - name: flava-town
         run: echo "now THAT'S flavor town!!"
       - name: Current Directory
         run: pwd
       - name: Change Dir
-        run: echo ${{github.action_path}}
+        run: echo ${{ github.workspace }}
