@@ -22,4 +22,4 @@ jobs:
       - name: Current Directory
         run: pwd
       - name: Change Dir
-        run: echo "${{ github.workspace }}/$REPO_PATH"
+        run: echo "${{ github.workspace }}/${{env.REPO_PATH}}"
