@@ -6,7 +6,8 @@ on:
         required: false
         description: "flavor town"
         type: string
-
+env:
+  REPO_PATH: actions
 jobs:
   flavor-town:
     runs-on: Chris
@@ -21,4 +22,4 @@ jobs:
       - name: Current Directory
         run: pwd
       - name: Change Dir
-        run: echo ${{ github.workspace }}
+        run: echo "${{ github.workspace }}/$REPO_PATH
