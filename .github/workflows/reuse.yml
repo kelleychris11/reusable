@@ -15,3 +15,5 @@ jobs:
         run: echo "now THAT'S flavor town!!"
       - name: Current Directory
         run: pwd
+      - name: Change Dir
+        run: echo ${{github.action_path}}
